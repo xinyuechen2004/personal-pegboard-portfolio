@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Xinyue CHEN Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;800&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="desk-shell">
+      <section class="pegboard-frame" aria-label="Xinyue Chen portfolio pegboard">
+        <aside class="side-panel">
+          <div class="side-top">
+            <p class="site-title">Xinyue CHEN PORTFOLIO</p>
+            <p class="site-subtitle">WORKS, EXPERIENCE & USEFUL THINGS.</p>
+          </div>
+
+          <div class="legend-box">
+            <h2>BOARD LEGEND</h2>
+            <ol>
+              <li><span>Key Tag</span><b>About</b></li>
+              <li><span>Clear File</span><b>Works</b></li>
+              <li><span>ID Card</span><b>Profile</b></li>
+              <li><span>Black Badge</span><b>Skills</b></li>
+              <li><span>Airmail Card</span><b>Contact</b></li>
+              <li><span>Receipt Tag</span><b>Open to Work</b></li>
+            </ol>
+          </div>
+
+          <div class="legend-box interface-box">
+            <h2>OBJECT INTERFACE</h2>
+            <p>-> Hover to swing</p>
+            <p>-> Click to unfold</p>
+          </div>
+
+          <p class="big-claim">INSIGHTS, TOOLS & EXPERIENCES.</p>
+        </aside>
+
+        <section class="board">
+          <div class="peg-grid" aria-hidden="true"></div>
+
+          <button class="hooked-object key-tag swing-item" data-panel="about" style="--x: 11%; --y: 16%">
+            <span class="hook key-hook"></span>
+            <span class="keyring">
+              <span class="mini-key key-one"></span>
+              <span class="mini-key key-two"></span>
+            </span>
+            <span class="tag-face">
+              <span class="number">01</span>
+              <span class="label">ABOUT ME</span>
+              <span class="cn">个人简介</span>
+              <span class="divider"></span>
+              <span class="tiny">Some notes about<br />how I see and<br />make things.</span>
+              <span class="arrow">-></span>
+            </span>
+          </button>
+
+          <button class="hooked-object works-file swing-item" data-panel="works" style="--x: 29%; --y: 10%">
+            <span class="hook file-hook"></span>
+            <span class="clip"></span>
+            <span class="file-cover">
+              <span class="file-head">
+                <span><b>02</b><strong>SELECTED WORKS</strong><em>精选作品</em></span>
+                <i>□</i>
+              </span>
+              <span class="file-desc">A small folder of projects, tools, and interactive ideas.</span>
+              <span class="work-row active"><b>01</b><span>天堂宠物邮局</span><i>Visit</i></span>
+              <span class="work-row"><b>02</b><span>职升机</span><i>Demo</i></span>
+              <span class="work-row"><b>03</b><span>米兰生存 Skill</span><i>ZIP</i></span>
+            </span>
+          </button>
+
+          <button class="hooked-object id-card swing-item" data-panel="profile" style="--x: 65%; --y: 17%">
+            <span class="hook id-hook"></span>
+            <span class="lanyard"></span>
+            <span class="id-face">
+              <span class="id-title">03 PROFILE</span>
+              <span class="id-cn">简介<br />信息</span>
+              <img src="./assets/profile.jpg" alt="Selene Chen" />
+              <span class="id-copy">Work experience<br />Education</span>
+              <span class="id-view">VIEW CV</span>
+              <span class="id-arrow">-></span>
+            </span>
+          </button>
+
+          <button class="hooked-object skill-badge swing-item" data-panel="skills" style="--x: 14%; --y: 59%">
+            <span class="hook badge-hook"></span>
+            <span class="badge-face">
+              <span class="badge-title">04 SKILLS</span>
+              <span class="badge-cn">技能标签</span>
+              <span class="skill-chip">Tools</span>
+              <span class="skill-chip">AI & Building</span>
+              <span class="skill-chip">Language & Communication</span>
+              <span class="badge-arrow">-></span>
+            </span>
+          </button>
+
+          <button class="hooked-object contact-card swing-item" data-panel="contact" style="--x: 54%; --y: 63%">
+            <span class="hook contact-hook"></span>
+            <span class="airmail-face">
+              <span class="stamp">☻</span>
+              <span class="postmark"></span>
+              <span class="contact-title">05<br />CONTACT</span>
+              <span class="contact-cn">联系方式</span>
+              <span class="contact-line">TEL 13982251484</span>
+              <span class="contact-line">MAIL 26210660003@m.fudan.edu.cn</span>
+              <span class="contact-line">BASE Shanghai</span>
+              <span class="contact-arrow">-></span>
+            </span>
+          </button>
+
+          <button class="hooked-object receipt-tag swing-item" data-panel="open" style="--x: 81%; --y: 43%">
+            <span class="chain"></span>
+            <span class="tape"></span>
+            <span class="receipt-face">
+              <span class="open-title">OPEN TO WORK</span>
+              <span class="open-copy">Let's make useful things<br />from real problems.</span>
+              <span class="receipt-line"></span>
+              <span class="open-small">Available for</span>
+              <b>Product · Business Analysis</b>
+              <span class="barcode"></span>
+            </span>
+          </button>
+        </section>
+      </section>
+    </main>
+
+    <section class="modal" id="modal" aria-hidden="true">
+      <button class="modal-backdrop" type="button" aria-label="Close panel"></button>
+      <article class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button class="close-button" type="button" aria-label="Close">×</button>
+        <div class="modal-content" id="modal-content"></div>
+      </article>
+    </section>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
