@@ -1044,9 +1044,9 @@ button {
 
 .education,
 .internship-card:nth-of-type(even) {
-  background: #e8d9bf;
-  border-color: rgba(83, 65, 42, 0.12);
-  box-shadow: 0 9px 20px rgba(67, 55, 38, 0.12);
+  background: #f5e9cf;
+  border-color: rgba(114, 86, 35, 0.09);
+  box-shadow: 0 8px 18px rgba(67, 55, 38, 0.09);
 }
 
 .profile-info h3,
